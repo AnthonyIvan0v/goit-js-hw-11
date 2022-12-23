@@ -1,2 +1,124 @@
 @import './common';
 @import './example';
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: burlywood;
+    color: brown;
+    line-height: 1.5;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: stretch;
+    padding: 15px;
+
+    margin: 0 auto;
+}
+
+
+.gallery-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+}
+
+.photo-card {
+    display: flex;
+    scale: 1;
+    flex-basis: calc(100% / 4 - 15px);
+    box-shadow: 1px 1px 5px 1px rgba(5, 5, 5, 0.2);
+    transition: transform 250ms ease;
+}
+
+.photo-card:hover {
+    transform: scale(1.03);
+    transition: transform 250ms ease;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-item b {
+    color: #032724;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.search-button {
+    height: 45px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+   
+}
+
+.search-button:hover {
+    background-color: blanchedalmond;
+    
+}
+
+
+.search-input {
+    padding: 10px 10px;
+    margin-right: 10px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    width: 350px;
+    background-color: blanchedalmond;
+
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px 40px;
+    outline: none;
+    color: black;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 50;
+    font-size: 16px;
+
+}
+
+.load-more:hover {
+    box-shadow: 1px 1px 5px 1px rgba(5, 5, 5, 0.2);
+    font-size: 17px;
+}
